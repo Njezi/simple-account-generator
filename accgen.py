@@ -7,7 +7,7 @@ u = 'QWERTYUIOPASDFGHJKLZXCVBNM'
 s = '!@#$%^&*()'
 n = '1234567890'
 
-pwd = ''
+pwdgen = ''
 namegen = ''
 
 #User settings
@@ -25,7 +25,7 @@ for i in range(nickname_length):
 
 
 for i in range(password_length):
-  pwd += ''.join(secrets.choice(pw_random))
+  pwdgen += ''.join(secrets.choice(pw_random))
 
 print("Your nickname is: " + namegen)
-print("Your password is: " + pwd)
+print("Your password is: " + pwdgen)
